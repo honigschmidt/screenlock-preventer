@@ -6,8 +6,8 @@ wait_time = 60 # Number of seconds to wait before moving the mouse
 
 start_time = time.time()
 last_position = mouse.get_position()
-ver = "1.1"
-rel = "11-11-2024"
+ver = "1.11"
+rel = "18-11-2024"
 keypressed = False
 
 def on_keypress(key):
@@ -37,3 +37,5 @@ while (True):
         mouse.click('left')
         mouse.move(current_position[0], current_position[1], absolute=True, duration=0.0)
         start_time = current_time
+
+    time.sleep(1);
