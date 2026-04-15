@@ -1,1 +1,1 @@
-py screenlock_preventer.py
+py screenlock-preventer.py
