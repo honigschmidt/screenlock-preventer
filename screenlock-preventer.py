@@ -5,7 +5,7 @@ import mouse
 from pynput import keyboard
 
 class ScreenlockPreventerApp:
-    WAIT_TIME = 60 # Number of seconds to wait before moving the mouse
+    WAIT_TIME = 60  # Number of seconds to wait before moving the mouse
     
     def __init__(self):
         self.is_running = True
