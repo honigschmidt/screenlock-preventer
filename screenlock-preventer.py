@@ -45,7 +45,7 @@ class ScreenlockPreventerApp:
                     time.sleep(1);
                 except KeyboardInterrupt:
                     print("Stopping...")
-                    sys.exit()
+                    self.is_running = False
 
 if __name__ == "__main__":
     app = ScreenlockPreventerApp()
