@@ -20,3 +20,7 @@ This effectively simulates user activity to the operating system without interru
 ## Prerequisites
 
 Before running the application, ensure you have Python installed.
+
+## License
+
+This project is licensed under the **MIT No Attribution License** — see the [LICENSE](LICENSE) file for full text and parameters.
