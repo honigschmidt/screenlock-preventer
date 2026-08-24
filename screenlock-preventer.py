@@ -25,7 +25,7 @@ class ScreenlockPreventerApp:
             self.start_time = time.time()
             self.last_position = mouse.get_position()
             self.keyboard_listener.start()
-            print("Screenlock preventer started. Close this window or press [CTRL]+[C] then [Y] to stop.")
+            print("Screenlock preventer started. Close this window or press [CTRL]+[C] twice to exit.")
             while (self.is_running):
                 try:
                     self.current_position = mouse.get_position()
@@ -44,8 +44,9 @@ class ScreenlockPreventerApp:
                         self.start_time = self.current_time
                     time.sleep(1);
                 except KeyboardInterrupt:
-                    print("Stopping...")
+                    print("Exiting...")
                     self.is_running = False
+                    sys.exit(0)
 
 if __name__ == "__main__":
     app = ScreenlockPreventerApp()
